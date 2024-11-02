@@ -1,7 +1,7 @@
 export const sections = {
   about: {
     title: 'About Me',
-    content: `Hello! I'm PMoon, a full-stack developer specializing in:
+    content: `Hello! I'm Patrick Moon, a full-stack developer specializing in:
       
 • <a href="https://github.com/mrdatawolf/SETradeHouse" target="_blank" rel="noopener noreferrer" class="text-[#00ff00] hover:text-[#00ff00]/80 underline">PHP Development</a>
 • <a href="https://scripts.pmoon.info" target="_blank" rel="noopener noreferrer" class="text-[#00ff00] hover:text-[#00ff00]/80 underline">Next.js Applications</a>
