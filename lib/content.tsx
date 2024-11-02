@@ -10,7 +10,7 @@ export const sections: Record<string, Section> = {
     title: 'About Me',
     content: (
       <>
-        Hello! I&apos;m PMoon, a full-stack developer specializing in:
+        Hello! I&apos;m Patrick Moon, a full-stack developer specializing in:
         
         <div className="mt-4 space-y-2">
           • <a href="https://github.com/mrdatawolf/SETradeHouse" target="_blank" rel="noopener noreferrer" className="text-[#00ff00] hover:text-[#00ff00]/80 underline">PHP Development</a>
