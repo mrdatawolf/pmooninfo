@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-green: #00ff00;
+  --terminal-dark: #000000;
+  --terminal-glow: rgba(0, 255, 0, 0.2);
+}
+
+body {
+  @apply bg-black text-[#00ff00] min-h-screen p-4;
+}
+
+.terminal-container {
+  @apply max-w-4xl mx-auto h-[600px];
+}
+
+.terminal-content {
+  @apply h-full flex flex-col;
+  text-shadow: 0 0 5px var(--terminal-glow);
+}
+
+.terminal-window {
+  @apply bg-black border border-[#00ff00] rounded-lg overflow-hidden flex-1 mb-4;
+}
+
+.terminal-header {
+  @apply flex justify-between items-center px-4 py-2 border-b border-[#00ff00];
+}
+
+.terminal-controls {
+  @apply flex gap-2;
+}
+
+.terminal-control {
+  @apply w-3 h-3 rounded-full;
+}
+
+.terminal-body {
+  @apply p-4 overflow-y-auto;
+  height: 450px;
+}
+
+.nav-item {
+  @apply cursor-pointer relative px-4 py-2 hover:bg-[#00ff00]/10;
+}
+
+.nav-item.active {
+  @apply bg-[#00ff00]/10;
+}
+
+.cursor-blink {
+  @apply absolute -right-2 top-1/2 -translate-y-1/2 w-2 h-4 bg-[#00ff00];
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.social-link {
+  @apply flex items-center gap-2 text-[#00ff00] hover:text-[#00ff00]/80;
+}
+
+.command-prompt-container {
+  @apply mt-4;
+}
+
+.command-prompt {
+  @apply flex items-center gap-2;
+}
+
+.prompt-symbol {
+  @apply text-[#00ff00];
+}
+
+.command-input {
+  @apply bg-transparent border-none outline-none text-[#00ff00] flex-1;
+  caret-color: #00ff00;
+}
+
+.command-input::placeholder {
+  @apply text-[#00ff00]/50;
+}
+
+.game-prompt, .chess-container {
+  @apply text-center;
+}
